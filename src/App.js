@@ -42,6 +42,12 @@ function App() {
         {
           name: "Karachi"
         },
+        {
+          name: "Quetta"
+        },
+        {
+          name: "Peshawar"
+        },
       ],
     },
     {
@@ -56,6 +62,12 @@ function App() {
         {
           name: "Pune"
         },
+        {
+          name: "Chennai"
+        },
+        {
+          name: "Kolkata"
+        },
       ],
     },
   ];
@@ -66,7 +78,7 @@ console.log(city);
   return (
     <div className="col-md-12">
             <form onSubmit={handleSubmit} className="col-md-12 text-center mt-5">
-              <div className="slct">
+          <div className="slct">
       <select  onChange={handleCountry} className="form-select w-25" >
         <option>Select Countries</option>
         {countries.map((ctr) => (
