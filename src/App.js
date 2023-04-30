@@ -11,6 +11,7 @@ function App() {
   const [city, setCity] = useState();
 
   const apiKey = "f56f24967aaf51182d1d4df628297c6d"
+
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ function App() {
         setWeatherData(response.data);
       });
   };
+
 
   function handleCountry(event) {
     setCountry(event.target.value)
@@ -88,7 +90,7 @@ console.log(city);
         <select  onChange={handleLocationChange} className="form-select w-25 slct1">
         <option>Select City</option>
         {cities.map((c) => (
-          <option value={city}>{c.name}</option>
+          <option value={c.name}>{c.name}</option>
         ))}
       </select>
       </div>
